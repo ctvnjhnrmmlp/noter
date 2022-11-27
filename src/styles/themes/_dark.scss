@@ -1,0 +1,46 @@
+@use '../constants/extends' as *;
+@use '../constants/variables' as *;
+
+.body {
+  &--dark {
+    @extend %bgc-black;
+  }
+}
+
+.nav {
+  &--dark {
+    border-bottom: 1px solid $white;
+  }
+}
+
+.toggler {
+  &-sun {
+    &--dark {
+      fill: $white;
+    }
+
+    &-beams {
+      &--dark {
+        stroke: $white;
+      }
+    }
+  }
+}
+
+.text-area {
+  &--dark {
+    @extend %bgc-black;
+    @extend %fc-white;
+
+    &::selection {
+      @extend %bgc-white;
+      @extend %fc-black;
+    }
+  }
+}
+
+.footer {
+  &--dark {
+    border-top: 1px solid $white;
+  }
+}

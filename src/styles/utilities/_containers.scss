@@ -1,0 +1,39 @@
+@use '../constants/extends' as *;
+
+.container {
+  & {
+    @extend %m-i-auto;
+    width: min(130.625rem, 93%);
+  }
+
+  &--content {
+    &__navbar, &__buttons, &__footer {
+      @extend %ds-flex;
+    }
+
+    &__navbar, &__footer {
+      @extend %jc-center;
+      @extend %ai-center;
+    }
+
+    &__buttons {
+      @extend %jc-space-evenly;
+      @extend %m-i-auto;
+
+      margin: 5vh 0 5vh 0;
+      width: 90%;
+    }
+
+    &__footer {
+      padding: min(2vh, 1rem);
+      flex-direction: column;
+    }
+  }
+
+  &--toggler {
+    @extend %ai-center;
+    margin-left: auto;
+    margin-top: 5px;
+  }
+}
+

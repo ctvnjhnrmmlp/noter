@@ -1,0 +1,6 @@
+@use '../constants/extends' as *;
+
+body {
+  @extend %bgc-white;
+  margin: 0 auto;
+}

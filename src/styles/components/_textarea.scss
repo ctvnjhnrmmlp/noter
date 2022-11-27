@@ -1,0 +1,14 @@
+@use '../constants/extends' as *;
+
+textarea {
+  @extend %bgc-white;
+
+  padding: 0.5rem;
+  margin: 5vh 0 5vh 0;
+  margin-inline: auto;
+  border: none;
+  width: 100%;
+  min-height: 90vh;
+  outline: none;
+  resize: none;
+}

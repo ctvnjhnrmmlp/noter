@@ -1,0 +1,8 @@
+@use '../constants/extends' as *;
+
+footer {
+  @extend %bgc-black;
+  @extend %w-100;
+
+  margin: 10vh 0 0 0;
+}

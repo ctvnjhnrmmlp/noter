@@ -1,0 +1,9 @@
+@use '../constants/extends' as *;
+
+nav {
+  @extend %w-100;
+  @extend %bgc-black;
+  @extend %ds-flex;
+  
+  margin: 0 auto;
+}
